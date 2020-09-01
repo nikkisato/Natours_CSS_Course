@@ -117,12 +117,12 @@ body {
 @keyframes moveInBottom {
     0% {
         opacity: 0;
-        transform: translateY(100%)
+        transform: translateY(100px)
     }
 
     100% {
         opacity: 1;
-        transform: translate(0%)
+        transform: translate(0)
     }
 }
 
@@ -177,6 +177,6 @@ body {
 }
 
 .btn-animated {
-    animation: moveInButton .1s ease-out .75s;
+    animation: moveInBottom .5s ease-out .75s;
     animation-fill-mode: backwards;
 }
