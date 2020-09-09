@@ -14,13 +14,14 @@
   </head>
   <body>
     <div class="navigation">
-      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
-      <label for="navi-toggle" class="navigation__button"
-        ><span class="navigation__icon">&nbsp;</span></label
+      <input
+        type="checkbox"
+        class="navigation__checkbox"
+        id="navi-toggle"
+      /><label for="navi-toggle" class="navigation__button"
+        ><span class="navigation__icon">&nbsp; </span></label
       >
-
       <div class="navigation__background">&nbsp;</div>
-
       <nav class="navigation__nav">
         <ul class="navigation__list">
           <li class="navigation__item">
@@ -29,15 +30,12 @@
           <li class="navigation__item">
             <a href="" class="navigation__link"><span>02</span>Your Benefits</a>
           </li>
-
           <li class="navigation__item">
             <a href="" class="navigation__link"><span>03</span>Popular Tours</a>
           </li>
-
           <li class="navigation__item">
             <a href="" class="navigation__link"><span>04</span>Stories</a>
           </li>
-
           <li class="navigation__item">
             <a href="" class="navigation__link"><span>05</span>Book now</a>
           </li>
@@ -53,7 +51,9 @@
           <span class="heading-primary--main">Outdoors</span
           ><span class="heading-primary--sub">is where life happens</span>
         </h1>
-        <a href="#" class="btn btn--white btn--animated">Discover our Tours</a>
+        <a href="#tours" class="btn btn--white btn--animated"
+          >Discover our Tours</a
+        >
       </div>
     </header>
     <main>
@@ -154,7 +154,7 @@
           </div>
         </div>
       </section>
-      <section class="section-tours">
+      <section class="section-tours" id="tours">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">Most popular tours</h2>
         </div>
@@ -182,7 +182,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$297</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book now !</a>
+                  <a href="#popup" class="btn btn--white">Book now !</a>
                 </div>
               </div>
             </div>
@@ -210,7 +210,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$497</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book now !</a>
+                  <a href="#popup" class="btn btn--white">Book now !</a>
                 </div>
               </div>
             </div>
@@ -238,7 +238,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$897</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book now !</a>
+                  <a href="#popup" class="btn btn--white">Book now !</a>
                 </div>
               </div>
             </div>
@@ -339,7 +339,6 @@
                     id="email"
                   /><label for="email" class="form__label">Email Address</label>
                 </div>
-
                 <div class="form__group u-margin-bottom-medium">
                   <div class="form__radio-group">
                     <input
@@ -347,10 +346,8 @@
                       class="form__radio-input"
                       id="small"
                       name="size"
-                    />
-                    <label for="small" class="form__radio-label">
-                      <span class="form__radio-button"></span>
-                      Small tour group
+                    /><label for="small" class="form__radio-label"
+                      ><span class="form__radio-button"></span>Small tour group
                     </label>
                   </div>
                   <div class="form__radio-group">
@@ -359,14 +356,11 @@
                       class="form__radio-input"
                       id="large"
                       name="size"
-                    />
-                    <label for="large" class="form__radio-label">
-                      <span class="form__radio-button"></span>
-                      Large tour group
+                    /><label for="large" class="form__radio-label"
+                      ><span class="form__radio-button"></span>Large tour group
                     </label>
                   </div>
                 </div>
-
                 <div class="form__group">
                   <button class="btn btn--green">Next Step &rarr;</button>
                 </div>
@@ -376,12 +370,10 @@
         </div>
       </section>
     </main>
-
     <footer class="footer">
       <div class="footer__logo-box">
         <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo" />
       </div>
-
       <div class="row">
         <div class="col-1-of-2">
           <div class="footer__navigation">
@@ -412,15 +404,17 @@
         </div>
       </div>
     </footer>
-
-    <div class="popup">
+    <div class="popup" id="popup">
       <div class="popup__content">
         <div class="popup__left">
-          <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img" />
-          <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img" />
+          <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img" /><img
+            src="img/nat-9.jpg"
+            alt="Tour photo"
+            class="popup__img"
+          />
         </div>
-
         <div class="popup__right">
+          <a href="#section-tours" class="popup__close">&times;</a>
           <h2 class="heading-secondary u-margin-bottom-small">
             Start booking now
           </h2>
@@ -450,7 +444,7 @@
         </div>
       </div>
     </div>
-    <!-- 
+    <!--     
     <section class="grid-test">
       <div class="row">
         <div class="col-1-of-2">Col 1 of 2</div>
