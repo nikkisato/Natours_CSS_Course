@@ -63,7 +63,7 @@ body {
   }
 
   @include respond(phone) {
-    letter-spacing: 2.5rem;
+    letter-spacing: 0rem;
   }
 
   &:hover {
